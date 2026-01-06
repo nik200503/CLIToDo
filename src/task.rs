@@ -2,14 +2,14 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct Task{
-	pub id: u8,
-	pub title: string,
+	pub id: u32,
+	pub title: String,
 	pub completed: bool,
 }
 
 impl Task{
-	pub fn new(id: u8,title: string)->self{
-		self{
+	pub fn new(id: u32,title: String)->Self{
+		Self{
 			id,
 			title,
 			completed: false
